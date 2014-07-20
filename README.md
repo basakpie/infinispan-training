@@ -1,0 +1,4 @@
+infinispan-training
+===================
+
+infinispan-training
