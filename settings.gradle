@@ -1,0 +1,3 @@
+include 'infinispan-library-mode'
+include 'infinispan-client-server-mode'
+include 'infinispan-utils'

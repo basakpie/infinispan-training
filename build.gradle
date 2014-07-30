@@ -1,0 +1,30 @@
+allprojects {
+	apply plugin : 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+	task initSrc << {
+		project.sourceSets*.allSource.srcDirTrees.flatten().dir.each { 
+			dir -> dir.mkdirs() 
+		}
+	}
+
+	dependencies {
+		compile 'org.infinispan:infinispan-core:7.0.0.Alpha5'
+		compile 'commons-io:commons-io:2.4'
+        compile 'org.projectlombok:lombok:1.14.4'
+        compile project(":infinispan-utils")
+	}
+}
+
+project(':infinispan-client-server-mode') {
+
+    dependencies {
+        compile 'org.infinispan:infinispan-client-hotrod:7.0.0.Alpha5'
+        compile 'org.infinispan:infinispan-remote-query-client:7.0.0.Alpha5'
+        compile 'org.infinispan:infinispan-query-dsl:7.0.0.Alpha5'
+    }
+
+}
