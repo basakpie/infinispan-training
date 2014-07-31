@@ -1,7 +1,5 @@
 infinispan-training
 ===================
-
-# infinispan
 Distributed in-memory key/value data grid and cache이며 Apache 2.0 license로 Java, Scala 언어로 구현 되어 있습니다.
 추가적인 기능으로 CacheStore(File,DB,RemoteServer,Cassandra,HBase,MongoDB...), SearchQuery(Apache Lucene), Transanction, 
 Map/Reduce, Distributed Execution.. 등을 지원 합니다.
