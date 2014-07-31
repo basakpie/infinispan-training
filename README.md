@@ -14,7 +14,7 @@ Map/Reduce, Distributed Execution.. 등을 지원 합니다.
 * HotRod (Infinispan native protocol) : 추가/삭제 되는 서버들의 인스턴스를 자동으로 감지하고 ReHashing 진행
 * Rest : http, websocket을 통한 접근 지원 
  
-# infinispan Hotrod Client Language
+# infinispan hotrod client language
 Java, Ruby, Python, C++, .NET
 
 # infinispan distributed topology
