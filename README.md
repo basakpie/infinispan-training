@@ -29,12 +29,13 @@ Java, Ruby, Python, C++, .NET
 * Expiration : 일정 시간이 지나면 삭제
 
 # infinispan datastore
-캐쉬 데이터 영속화를 위한 저장 스토어(File,DB,RemoteServer,Cassandra,HBase,MongoDB...) 연동되어 지며 Application Cache Data, Search를 위한 Apahce Lucene Index Data 두 가지 형태의 데이터 스토어 제공
+캐쉬 데이터 영속화를 위한 데이터 저장 스토어(File,DB,RemoteServer,Cassandra,HBase,MongoDB...) 제공
+Search를 위한 Apahce Lucene Index Data 스토어 제공
 * Passivation : Cache 이벤트와 함께 동기 or 비동기로 스토어에 데이터가 쓰여짐
 * Activation : Cache 지워지거나 서버가 내려 갈 때 동기 or 비동기로 스토어에 데이터가 쓰여짐
 
 # infinispan etc
-* Map/Reduce, Distributed Execution, Transaction, Distribut Search, Async, Sort, Pagenation, Lock 처리 등을 지원 함.
+* Map/Reduce, Distributed Execution, Transaction, Distributed SearchQuery, Async, Sort, Pagenation, Lock 처리 등을 지원 함.
 
 # infinisapn Coding guide
 * Library Mode
