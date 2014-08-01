@@ -36,9 +36,27 @@ Java, Ruby, Python, C++, .NET
 # infinispan etc
 * Map/Reduce, Distributed Execution, Transaction, Distribut Search, Async, Sort, Pagenation, Lock 처리 등을 지원 함.
 
-# infinisapn training test guide
+# infinisapn guide
 * Library Mode
+```
+EmbeddedCacheManager manager = new DefaultCacheManager("infinispan-distribution.xml");
+Cache<Object, Object> cache = manager.getCache();
+Cache<Object, Object> cache = manager.getCache("default");
+..............
+cache.put('key1', 'value1');
+```
 * Client/Server Mode
+```
+ConfigurationBuilder builder = new ConfigurationBuilder();
+builder.addServer().host("127.0.0.1").port(11222);
+Configuration config = builder.build();
+
+RemoteCacheManager remoteCacheManager = new RemoteCacheManager(config);
+RemoteCache<String, String> cache = remoteCacheManager.getCache("default");
+..............
+cache.put('key1', 'value1');
+```
+
 
 
 
