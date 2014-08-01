@@ -17,7 +17,7 @@ Map/Reduce, Distributed Execution.. 등을 지원 합니다.
 # infinispan hotrod client language
 Java, Ruby, Python, C++, .NET
 
-# infinispan distributed topology
+# infinispan distributed cache topology
 * Local Storage - Local Cache 용도로 사용. 노드간 복제 않함
 * Replication Cache  - 데이터를 모든 노드에 똑같이 복제 함
 * Distributed Cache - 데이터를 노드에 분산 저장 시킴 (장애 발생을 위해 복제 노드 값을 지정 할 수 있음)
