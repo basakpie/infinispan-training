@@ -1,9 +1,7 @@
 infinispan-training
 ===================
 Distributed in-memory key/value data grid and cache이며 Apache 2.0 license로 Java, Scala 언어로 구현 되어 있습니다.
-추가적인 기능으로 CacheStore(File,DB,RemoteServer,Cassandra,HBase,MongoDB...), SearchQuery(Apache Lucene), Transanction, 
-Map/Reduce, Distributed Execution.. 등을 지원 합니다.
-
+추가적인 기능으로 CacheStore(File,DB,RemoteServer,Cassandra,HBase,MongoDB...), SearchQuery(Apache Lucene), Transanction, Map/Reduce, Distributed Execution.. 등을 지원 합니다.
 
 # infinispan mode
 * Library : Embeded 형태로 Application에 Library(infinispan-core-xx.jar)를 포함하여 Cache를 관리 하는 형태
@@ -41,6 +39,9 @@ Search를 위한 Apahce Lucene Index Data 스토어 제공
 # infinispan etc
 * Map/Reduce, Distributed Execution, Transaction, Distributed SearchQuery, Async, Sort, Pagenation, Lock 처리 등을 지원 함.
  
+# infinispan node communication
+* jboss의 http://www.jgroups.org/ 프로젝트를 이용함. (ehcache도 통신은 jgroups을 이용함)
+ 
 # infinisapn Coding guide
 * Library Mode
 ```
@@ -61,7 +62,6 @@ RemoteCache<String, String> cache = remoteCacheManager.getCache("default");
 ..............
 cache.put('key1', 'value1');
 ```
-
 
 
 
