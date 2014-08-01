@@ -33,11 +33,14 @@ Search를 위한 Apahce Lucene Index Data 스토어 제공
 * Activation : Cache 지워지거나 서버가 내려 갈 때 동기 or 비동기로 스토어에 데이터가 쓰여짐
 
 # infinispan integration
-* SpringFramework Cache (library,client/server모드)
-* Hibernate 2nd Cache (library모드)
+* SpringFramework Cache
+* Hibernate 2nd Cache (library-mode)
+* RHQ Monitoring Server(jmx)
+* Amazone S3
+* JBoss AS
 
 # infinispan etc
-* Map/Reduce, Distributed Execution, Transaction, Distributed SearchQuery, Async, Sort, Pagenation, Lock 처리 등을 지원 함.
+* Map/Reduce, Distributed Execution Callback, Transaction, Distributed SearchQuery, Asynchronous, Sort, Pagenation, Lock, Listener 처리 등을 지원 함.
  
 # infinispan node communication
 * jboss의 http://www.jgroups.org/ 프로젝트를 이용함. (ehcache도 통신은 jgroups을 이용함)
