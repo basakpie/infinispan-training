@@ -18,11 +18,11 @@ Map/Reduce, Distributed Execution.. 등을 지원 합니다.
 Java, Ruby, Python, C++, .NET
 
 # infinispan distributed cache topology
-* Local Storage - Local Cache 용도로 사용. 노드간 복제 않함
+* Local Storage - Local Cache 용도로 사용. 노드간 복제 안 함
 * Replication Cache  - 데이터를 모든 노드에 똑같이 복제 함
 * Distributed Cache - 데이터를 노드에 분산 저장 시킴 (장애 발생을 위해 복제 노드 값을 지정 할 수 있음)
 * L1 + Disribution
-* Invalidation Cache - 데이터가 삭제 될 때 다른 노드에 이벤트를 발생 시킴
+* Invalidation Cache - 데이터가 삭제 될 때 다른 노드에 이벤트를 발생 시킴 (hibernate 2nd cache)
 
 # infinispan evition & expiration
 * Evition : Max Entriy 개수를 넘었을 때 FIFO, LRU... 등에 따라 삭제
@@ -34,9 +34,13 @@ Search를 위한 Apahce Lucene Index Data 스토어 제공
 * Passivation : Cache 이벤트와 함께 동기 or 비동기로 스토어에 데이터가 쓰여짐
 * Activation : Cache 지워지거나 서버가 내려 갈 때 동기 or 비동기로 스토어에 데이터가 쓰여짐
 
+# infinispan integration
+* SpringFramework Cache (library,client/server모드)
+* Hibernate 2nd Cache (library모드)
+
 # infinispan etc
 * Map/Reduce, Distributed Execution, Transaction, Distributed SearchQuery, Async, Sort, Pagenation, Lock 처리 등을 지원 함.
-
+ 
 # infinisapn Coding guide
 * Library Mode
 ```
