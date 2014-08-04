@@ -67,8 +67,8 @@ cache.put('key1', 'value1');
 ```
 # Reference Site
 * 오픈나루 nameislocus님 자료를 토대로 공부함.
-http://opennaru.tistory.com/36
-https://github.com/nameislocus/jdg-javase-example.git
+- http://opennaru.tistory.com/36
+- https://github.com/nameislocus/jdg-javase-example.git
 * 기타 기능 및, 연동 부분 Spring, Hibernate 2nd Cache, Server 설정 방법은 infinispan test code 분석 하는게 가장 좋음.
 https://github.com/infinispan/infinispan.git
 
