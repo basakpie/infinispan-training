@@ -65,6 +65,14 @@ RemoteCache<String, String> cache = remoteCacheManager.getCache("default");
 ..............
 cache.put('key1', 'value1');
 ```
+
+* Server Start
+```
+infinispan-client-server-mode/src/script/* 파일 참조
+$JBOSS_HOME/bin/standalone.sh --server-config=standalone-ha.xml
+https://docs.jboss.org/author/pages/viewpage.action?pageId=53117092
+```
+
 # Reference Site
 * 오픈나루 nameislocus님 자료를 토대로 공부함.
 - http://opennaru.tistory.com/36
